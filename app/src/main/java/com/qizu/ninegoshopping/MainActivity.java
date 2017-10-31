@@ -36,5 +36,6 @@ public class MainActivity extends AppCompatActivity {
                 .addTabItem("个人", R.mipmap.ic_nav_user_press , R.mipmap.ic_nav_user, Fragment_user.class)
                 .isShowDivider(false);
                 //更新
+        //啊哈
     }
 }
