@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#E2E2E2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="#FC4F02"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@mipmap/taobao" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="未登录"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFD85115"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio"
+                    style="@style/LogGeren"
+                    android:layout_gravity="center"
+
+                    android:drawableTop="@mipmap/ic_collection_goods"
+                    android:text="商品;0"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_gravity="center"
+
+                    style="@style/LogGeren"
+
+
+                    android:drawableTop="@mipmap/ic_collection_store"
+                    android:text="店铺;0"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    style="@style/LogGeren"
+                    android:layout_gravity="center"
+
+                    android:drawableTop="@mipmap/ic_user_footprint"
+                    android:text="我的足迹"
+
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/img3"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_user_shou"
+            />
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货地址"
+            android:layout_marginLeft="40dp"
+            />
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_normal_dot_left"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_weight="4"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_user_order"
+                />
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部订单"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_normal_dot_left"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                />
+        </RelativeLayout>
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                style="@style/LogGeren1"
+                android:id="@+id/radiogeren1"
+
+                android:drawableTop="@mipmap/ic_user_order_wait_pay"
+                android:text="未付款"
+
+                />
+            <RadioButton
+                style="@style/LogGeren1"
+                android:id="@+id/radiogeren2"
+
+                android:drawableTop="@mipmap/ic_user_order_wait_drive"
+                android:text="待发货"
+
+                />
+            <RadioButton
+                style="@style/LogGeren1"
+                android:id="@+id/radiogeren3"
+
+                android:drawableTop="@mipmap/ic_user_order_wait_receipt"
+                android:text="待收货"
+
+                />
+            <RadioButton
+                style="@style/LogGeren1"
+                android:id="@+id/radiogeren4"
+
+                android:drawableTop="@mipmap/ic_user_order_wait_comment"
+                android:text="待评价"
+
+                />
+            <RadioButton
+                style="@style/LogGeren1"
+                android:id="@+id/radiogeren5"
+
+                android:drawableTop="@mipmap/ic_user_order_wait_refund"
+                android:text="退款/货"
+
+
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#fff"
+        android:layout_weight="4"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_user_property"
+                />
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的财产"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_normal_dot_left"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                />
+        </RelativeLayout>
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                style="@style/LogGeren1"
+
+                android:id="@+id/radiogeren6"
+
+                android:drawableTop="@mipmap/ic_user_property_1"
+                android:text="预存款"
+
+                />
+            <RadioButton
+                style="@style/LogGeren1"
+
+                android:id="@+id/radiogeren7"
+
+                android:drawableTop="@mipmap/ic_user_property_2"
+                android:text="充值卡"
+
+                />
+            <RadioButton
+                style="@style/LogGeren1"
+                android:id="@+id/radiogeren8"
+
+                android:drawableTop="@mipmap/ic_user_property_3"
+                android:text="代金券"
+
+                />
+
+            <RadioButton
+                style="@style/LogGeren1"
+                android:id="@+id/radiogeren9"
+
+                android:drawableTop="@mipmap/ic_user_property_4"
+                android:text="红包"
+
+                />
+
+            <RadioButton
+                style="@style/LogGeren1"
+                android:layout_weight="1"
+                android:id="@+id/radiogeren10"
+
+                android:drawableTop="@mipmap/ic_user_property_5"
+                android:text="积分"
+
+
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_user_shezhi"
+            />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统设置"
+            android:layout_marginLeft="40dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/ic_normal_dot_left"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

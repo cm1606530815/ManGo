@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_margin="10dp">
+    <ImageView
+        android:id="@+id/head_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/touxiang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/ed_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="手机号/会员/会员名/邮箱"
+        android:layout_below="@+id/head_image"
+        android:layout_alignLeft="@+id/ed_password"
+        android:layout_alignStart="@+id/ed_password" />
+
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:password="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/ed_user"/>
+
+    <TextView
+        android:id="@+id/zhuce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_password"
+        android:layout_alignParentRight="true"
+        android:text="新用户注册"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:layout_below="@id/zhuce"
+        android:layout_marginTop="10dp"
+        android:background="#cc5a0d"/>
+
+</RelativeLayout>
