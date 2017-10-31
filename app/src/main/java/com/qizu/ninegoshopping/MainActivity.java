@@ -35,6 +35,6 @@ public class MainActivity extends AppCompatActivity {
                 .addTabItem("购物车", R.mipmap.ic_nav_cart_press, R.mipmap.ic_nav_cart, Fragment_cart.class)
                 .addTabItem("个人", R.mipmap.ic_nav_user_press , R.mipmap.ic_nav_user, Fragment_user.class)
                 .isShowDivider(false);
-
+                //更新
     }
 }
